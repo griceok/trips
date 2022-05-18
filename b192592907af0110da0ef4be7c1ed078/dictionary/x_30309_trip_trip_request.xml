@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Trip Request" max_length="40" name="x_30309_trip_trip_request" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="requestor" max_length="32" name="requestor" reference="sys_user" type="reference"/>
+        <element label="Trip num" max_length="32" name="trip_num" reference="x_30309_trip_trips" type="reference"/>
+        <index name="index">
+            <element name="requestor"/>
+        </index>
+        <index name="index2">
+            <element name="trip_num"/>
+        </index>
+    </element>
+</database>

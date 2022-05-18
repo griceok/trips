@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Trips" max_length="40" name="x_30309_trip_trips" text_index="true" type="collection">
+        <element label="Host" max_length="32" name="host" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Trip Date" max_length="40" name="trip_date" type="glide_date_time"/>
+        <element display="true" label="Trip Name" max_length="40" name="trip_name" type="string"/>
+        <index name="index">
+            <element name="host"/>
+        </index>
+    </element>
+</database>
